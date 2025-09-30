@@ -73,3 +73,16 @@ else
 		if (ySpeed < 0) ySpeed = 0
 	}
 }
+
+//Weapon
+
+if (keyboard_check(vk_control) and canShoot)
+{
+	switch(weapon)
+	{
+		
+		case "pistol":
+			scr_pistol()
+		break;
+	}
+}

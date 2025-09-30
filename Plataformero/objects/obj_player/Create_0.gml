@@ -13,3 +13,10 @@ grav = 0.4
 //Control
 ground = 0
 right = 1
+
+//Weapons
+weapon = "pistol"
+canShoot = 1
+weapon_ModX = 15
+weapon_ModY = -25
+reloadSpeed = 15
