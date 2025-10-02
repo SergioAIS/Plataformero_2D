@@ -1,3 +1,4 @@
+hp = 30
 //Movimiento
 
 xSpeed = 0

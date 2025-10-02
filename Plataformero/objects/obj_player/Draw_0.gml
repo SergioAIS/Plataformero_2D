@@ -1,7 +1,7 @@
 //Sprite checks
 if (ground)
 {
-	if (ySpeed = 0)
+	if (xSpeed == 0)
 	{
 		sprite_index = s_stand	
 	}
