@@ -1,5 +1,6 @@
 //Stats
-hp = 30
+hpMax = 30
+hp = hpMax
 reloadSpeed = 90
 shootDelay = 30
 attackRange_x = 200

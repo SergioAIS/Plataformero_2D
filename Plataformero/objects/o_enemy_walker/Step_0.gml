@@ -1,7 +1,6 @@
-if (hp <= 0)
-{
-	instance_destroy()
-}
+// Inherit the parent event
+event_inherited();
+
 //Shoot
 if (canShoot)
 {

@@ -1,1 +1,1 @@
-hp -= other.dmg
+event_inherited()

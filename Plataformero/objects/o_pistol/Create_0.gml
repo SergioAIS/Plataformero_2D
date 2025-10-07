@@ -1,2 +1,2 @@
-hSpeed = 10
+hspeed = 10
 dmg = 10
