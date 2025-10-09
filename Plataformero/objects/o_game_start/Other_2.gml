@@ -1,3 +1,6 @@
+//Globales
+global.previous_room = 0
+
 //Particles
 
 global.p_pistol = part_type_create();

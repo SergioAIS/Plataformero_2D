@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet1",
+  "name": "t_default",
   "spriteId": {
     "name": "bd59857c_053f_4993_b9e1_3a2a6317ba4c",
     "path": "sprites/bd59857c_053f_4993_b9e1_3a2a6317ba4c/bd59857c_053f_4993_b9e1_3a2a6317ba4c.yy",
@@ -12,13 +12,13 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
   "out_columns": 9,
   "tile_count": 80,
   "autoTileSets": [],
