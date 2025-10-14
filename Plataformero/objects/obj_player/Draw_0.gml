@@ -3,7 +3,14 @@ if (ground)
 {
 	if (xSpeed == 0)
 	{
-		sprite_index = s_stand	
+		if (crouch)
+		{
+			sprite_index = s_crouch
+		}
+		else
+		{
+			sprite_index = s_stand	
+		}
 	}
 	else
 	{
@@ -31,5 +38,5 @@ else
 	image_xscale = -1
 }
 
-mask_index = s_player_mask
+if (!crouch) mask_index = s_player_mask else mask_index = s_player_mask_crouch
 draw_self()

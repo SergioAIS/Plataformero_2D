@@ -13,7 +13,9 @@ grav = 0.4
 
 //Control
 ground = 0
+crouch = 0
 right = 1
+
 
 //Weapons
 weapon = "pistol"

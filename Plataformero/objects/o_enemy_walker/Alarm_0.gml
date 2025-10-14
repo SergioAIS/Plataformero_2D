@@ -1,5 +1,5 @@
 /// @description Shoot
-obj = instance_create_layer(x, y - 25, "att", o_enemy_shot)
+obj = instance_create_layer(x, y - 30, "att", o_enemy_shot)
 
 if (image_xscale == -1) obj.hspeed *= -1
 

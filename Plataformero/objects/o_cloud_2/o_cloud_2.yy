@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_solid",
+  "name": "o_cloud_2",
   "spriteId": {
-    "name": "s_solid",
-    "path": "sprites/s_solid/s_solid.yy",
+    "name": "s_cloud_2",
+    "path": "sprites/s_cloud_2/s_cloud_2.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
