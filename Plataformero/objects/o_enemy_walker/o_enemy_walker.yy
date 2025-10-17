@@ -6,7 +6,7 @@
     "name": "s_enemy_walker",
     "path": "sprites/s_enemy_walker/s_enemy_walker.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": {

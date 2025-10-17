@@ -1,4 +1,8 @@
-hp = 30
+//Stats
+hpMax = 40
+hp = hpMax
+inviTime = 45
+
 //Movimiento
 
 xSpeed = 0
@@ -15,6 +19,8 @@ grav = 0.4
 ground = 0
 crouch = 0
 right = 1
+invi = 0
+death = 0
 
 
 //Weapons

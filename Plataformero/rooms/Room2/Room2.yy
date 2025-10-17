@@ -25,6 +25,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61BEE08C","properties":[],"isDnd":false,"objectId":{"name":"o_enemy_walker","path":"objects/o_enemy_walker/o_enemy_walker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FDC5DB","properties":[],"isDnd":false,"objectId":{"name":"o_enemy_walker","path":"objects/o_enemy_walker/o_enemy_walker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1664.0,"y":288.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_81CF3CE","properties":[],"isDnd":false,"objectId":{"name":"o_enemy_walker","path":"objects/o_enemy_walker/o_enemy_walker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13334EE2","properties":[],"isDnd":false,"objectId":{"name":"o_checkpoint","path":"objects/o_checkpoint/o_checkpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":448.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"terrain","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5972E470","properties":[],"isDnd":false,"objectId":{"name":"o_tran_l","path":"objects/o_tran_l/o_tran_l.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":448.0,},
@@ -202,6 +203,7 @@
     {"name":"inst_61BEE08C","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_2FDC5DB","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_81CF3CE","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_13334EE2","path":"rooms/Room2/Room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

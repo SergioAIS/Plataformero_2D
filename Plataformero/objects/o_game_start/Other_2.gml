@@ -1,5 +1,7 @@
 //Globales
 global.previous_room = 0
+global.checkpoint = 0
+global.player_respawn = 0
 
 //Particles
 
