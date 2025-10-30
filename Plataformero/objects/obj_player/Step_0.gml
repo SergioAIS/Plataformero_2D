@@ -36,26 +36,48 @@ if (!death)
 	//Salto
 	if (keyboard_check_pressed(vk_alt))
 	{
-		if (ground == 1)
-		{
-			ground = 0
-			if (crouch)
-			{
-				if (place_free(x, y + 1))
-				{
-					y += 1
-				}
-				else
-				{
-					ySpeed = -jumpPower
-				}
-			}
-			else
-			{
-				ySpeed = -jumpPower	
-			}
-		}
+	    if (ground == 1)
+	    {
+	        ground = 0
+	        if (crouch)
+	        {
+	            if (place_free(x, y + 1))
+	            {
+	                y += 1
+	            }
+	            else
+	            {
+	                ySpeed = -jumpPower
+	            }
+	        }
+	        else
+	        {
+	            ySpeed = -jumpPower	
+	        }
+	        jump_count = 1
+	        djump_available = global.has_djump
+	    }
+	    else
+	    {
+	        if (djump_available)
+	        {
+	            ySpeed = -jumpPower
+	            djump_available = false
+	            jump_count = 2
+
+	            if (variable_global_exists("part_front"))
+	            {
+	                part_particles_create(global.part_front, x, y, global.p_double_jump, 30)
+	            }
+	        }
+	    }
 	}
+
+	if (keyboard_check_released(vk_alt))
+	{
+	    if (ySpeed < 0) ySpeed = 0	
+	}
+
 
 	if (keyboard_check_released(vk_alt))
 	{
@@ -102,21 +124,26 @@ if (!death)
 	//Checks
 	if (collision_rectangle(x - 12, y, x + 12, y + 1, o_terrain, 0, 1) and collision_rectangle(x - 12, y -10, x + 12, y, o_terrain, 0, 1) == noone) 
 	{
-		ground = 1
-		ySpeed = 0
+	    ground = 1
+	    ySpeed = 0
+
+	    // reset de doble salto al tocar suelo
+	    jump_count = 0
+	    djump_available = global.has_djump
 	}
 	else
 	{
-		ground = 0
-		crouch = 0
-		ySpeed += grav
-		if (ySpeed > fallMax) ySpeed = fallMax
-	
-		if (!place_free(x, y - 1)) 
-		{
-			if (ySpeed < 0) ySpeed = 0
-		}
+	    ground = 0
+	    crouch = 0
+	    ySpeed += grav
+	    if (ySpeed > fallMax) ySpeed = fallMax
+
+	    if (!place_free(x, y - 1)) 
+	    {
+	        if (ySpeed < 0) ySpeed = 0
+	    }
 	}
+
 	
 	if (hp <= 0)
 	{
@@ -126,7 +153,6 @@ if (!death)
 	}
 
 	//Weapon
-
 	if (keyboard_check(vk_control) and canShoot)
 	{
 		switch(weapon)
@@ -134,6 +160,10 @@ if (!death)
 		
 			case "pistol":
 				scr_pistol()
+			break;
+			
+			case "machine":
+				scr_machine_gun()
 			break;
 		}
 	}

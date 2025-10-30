@@ -1,0 +1,9 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_machine_gun(){
+	bullet = instance_create_layer(x + weapon_ModX * image_xscale, y + weapon_ModY, "att", o_pistol)
+	bullet.image_xscale = image_xscale
+	bullet.hspeed *= image_xscale
+	canShoot = 0
+	alarm[0] = reloadSpeedMachine
+}
