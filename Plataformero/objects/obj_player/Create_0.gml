@@ -12,7 +12,7 @@ pick_dj = 0
 
 
 x_speed = 0;
-x_speed_max = 5.5;
+x_speed_max = 3;
 x_accel = 0.5;
 
 ground = 0;

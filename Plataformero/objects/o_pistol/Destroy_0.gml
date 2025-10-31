@@ -1,1 +1,1 @@
-part_particles_create(global.part_front, x, y, global.p_pistol, 12)
+//part_particles_create(global.part_front, x, y, global.p_pistol, 12)

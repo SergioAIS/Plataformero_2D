@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_tran_u",
+  "name": "o_pow_heal",
   "spriteId": {
-    "name": "s_tran_l",
-    "path": "sprites/s_tran_l/s_tran_l.yy",
+    "name": "s_pow_heal",
+    "path": "sprites/s_pow_heal/s_pow_heal.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_tran",
-    "path": "objects/o_tran/o_tran.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,12 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "trans",
-    "path": "folders/Objects/levels/trans.yy",
+    "name": "pows",
+    "path": "folders/Objects/player/pows.yy",
   },
 }
