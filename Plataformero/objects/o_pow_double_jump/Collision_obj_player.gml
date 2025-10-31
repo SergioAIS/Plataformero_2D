@@ -1,3 +1,4 @@
-global.has_djump = true
-other.djump_available = true
-instance_destroy()
+
+obj_player.pick_dj = 1
+obj_player.dj = 1;
+instance_destroy();

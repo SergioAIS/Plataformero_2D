@@ -1,3 +1,3 @@
 /// @description Invi
 
-invi = 0
+invi = 0;

@@ -1,51 +1,62 @@
-if (!death)
+
+if(!dead)
 {
-	//Sprite checks
-	if (ground)
+
+//Sprite Checks ---------------------------------------------
+
+if(ground)
+{
+	if(x_speed == 0)
 	{
-		if (xSpeed == 0)
+		if(!crouch)
 		{
-			if (crouch)
-			{
-				sprite_index = s_crouch
-			}
-			else
-			{
-				sprite_index = s_stand	
-			}
+			sprite_index = s_stand;
 		}
 		else
 		{
-			sprite_index = s_walk
+			sprite_index = s_crouch;
 		}
 	}
 	else
 	{
-		if (ySpeed < 0)
-		{
-			sprite_index = s_jump
-		}
-		else
-		{
-			sprite_index = s_fall
-		}
+		sprite_index = s_walk;
 	}
-
-	if (right)
+}else
+{
+	if(y_speed >= 0)
 	{
-		image_xscale = 1	
+		sprite_index = s_fall;
 	}
 	else
 	{
-		image_xscale = -1
+		sprite_index = s_jump;
 	}
+}
 
-	if (!crouch) mask_index = s_player_mask else mask_index = s_player_mask_crouch
-
-	if (invi) image_alpha = 0.75 else image_alpha = 1
+if(right)
+{
+	image_xscale = 1;
 }
 else
 {
-	sprite_index = s_death
+	image_xscale = -1;
 }
-draw_self()
+
+if(invi)
+{
+	image_alpha = 0.75;
+}
+else
+{
+	image_alpha = 1;
+}
+
+if(!crouch) mask_index = s_player_mask; else mask_index = s_player_mask_crouch;
+
+}
+else
+{
+	sprite_index = s_death;
+}
+
+draw_self();

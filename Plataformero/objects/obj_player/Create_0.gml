@@ -1,38 +1,47 @@
-//Stats
-hpMax = 40
-hp = hpMax
-inviTime = 45
 
-//Movimiento
+//stats ------------------------------------
 
-xSpeed = 0
-xSpeedMax = 5.5
-xAccel = 0.5
+hpMax = 60;
+hp = hpMax;
+invi_time = 45;
 
-ySpeed = 0
-fallMax = 11
-jumpPower = 10
+//movimiento -------------------------------
 
-grav = 0.4
-
-//Control
-ground = 0
-crouch = 0
-right = 1
-invi = 0
-death = 0
-/// Create de obj_player (añade esto)
-if (!variable_global_exists("has_djump")) global.has_djump = false  // se activa con el powerup
-djump_available = global.has_djump   // si ya estaba activo, habilita de entrada
-jump_count = 0
+dj = 0;
+pick_dj = 0
 
 
-//Weapons
-weapon = "pistol"
-canShoot = 1
-weapon_ModX = 15
-weapon_ModY = -25
-reloadSpeed = 35
-reloadSpeedMachine = 15
+x_speed = 0;
+x_speed_max = 5.5;
+x_accel = 0.5;
 
+ground = 0;
+crouch = 0;
+
+y_speed = 0;
+fall_max = 11;
+jump_power = 10;
+grav = 0.4;
+coyote_t = 10;
+coyote_c = 1;
+
+// weapons ---------------------------------
+
+weapon = "pistol"; // pistol, heavy, laser
+can_shoot = 1;
+
+pick_heavy = 0;
+ammo_heavy = 0;
+
+pick_laser = 0;
+ammo_laser = 0;
+
+weapon_modx = 15;
+weapon_mody = -25;
+
+//control ----------------------------------
+
+dead = 0;
+invi = 0;
+right = 1;
 

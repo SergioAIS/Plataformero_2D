@@ -1,1 +1,0 @@
-part_particles_create(global.part_front, x, y, global.p_enemy_shot, 12)

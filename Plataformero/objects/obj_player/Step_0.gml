@@ -1,185 +1,194 @@
-if (!death)
+
+if(!dead)
 {
-	//Input
-	if (keyboard_check(vk_right))
+
+// INPUT ---------------------------------------------------
+
+//Weapon Change ----------------------
+
+if(keyboard_check_pressed(ord("1"))) weapon = "pistol";
+if(keyboard_check_pressed(ord("2")) and pick_heavy) weapon = "heavy";
+if(keyboard_check_pressed(ord("3")) and pick_laser) weapon = "laser";
+
+//Movement LEFT RIGHT ----------------
+
+if(keyboard_check(vk_right))
+{
+	if(x_speed < 0) x_speed = 0;
+	if(x_speed < x_speed_max) x_speed += x_accel;
+	right = 1;
+}
+
+if(keyboard_check(vk_left))
+{
+	if(x_speed > 0) x_speed = 0;
+	if(x_speed > -x_speed_max) x_speed -= x_accel;
+	right = 0;
+}
+
+if(!keyboard_check(vk_right) and !keyboard_check(vk_left)) x_speed = 0;
+if(keyboard_check(vk_right) and keyboard_check(vk_left)) x_speed = 0;
+
+// Crouch ---------------
+
+if(keyboard_check(vk_down))
+{
+	if(ground)
 	{
-		if (xSpeed < 0) xSpeed = 0
-		if (xSpeed < xSpeedMax) xSpeed += xAccel
-		right = 1
+		crouch = 1;
+		x_speed = 0;
+		weapon_mody = -14;
 	}
+}
+else
+{
+	crouch = 0;
+	weapon_mody = -25;
+}
 
-	if (keyboard_check(vk_left))
+// Jump -----------------
+
+if(keyboard_check_pressed(vk_alt))
+{
+	if(ground or coyote_c or dj)
 	{
-		if (xSpeed > 0) xSpeed = 0
-		if (xSpeed > -xSpeedMax) xSpeed -= xAccel
-		right = 0
-	}
-
-	if (keyboard_check(vk_right) and keyboard_check(vk_left)) xSpeed = 0
-	if (!keyboard_check(vk_right) and !keyboard_check(vk_left)) xSpeed = 0
-
-	//Agacharse
-	if (keyboard_check(vk_down))
-	{
-		if (ground)
-		{
-			crouch = 1
-			xSpeed = 0
-			weapon_ModY = -15
-		}
-	}
-	else
-	{
-		crouch = 0
-		weapon_ModY = -25
-	}
-	//Salto
-	if (keyboard_check_pressed(vk_alt))
-	{
-	    if (ground == 1)
-	    {
-	        ground = 0
-	        if (crouch)
-	        {
-	            if (place_free(x, y + 1))
-	            {
-	                y += 1
-	            }
-	            else
-	            {
-	                ySpeed = -jumpPower
-	            }
-	        }
-	        else
-	        {
-	            ySpeed = -jumpPower	
-	        }
-	        jump_count = 1
-	        djump_available = global.has_djump
-	    }
-	    else
-	    {
-	        if (djump_available)
-	        {
-	            ySpeed = -jumpPower
-	            djump_available = false
-	            jump_count = 2
-
-	            if (variable_global_exists("part_front"))
-	            {
-	                part_particles_create(global.part_front, x, y, global.p_double_jump, 30)
-	            }
-	        }
-	    }
-	}
-
-	if (keyboard_check_released(vk_alt))
-	{
-	    if (ySpeed < 0) ySpeed = 0	
-	}
-
-
-	if (keyboard_check_released(vk_alt))
-	{
-		if (ySpeed < 0) ySpeed = 0	
-	}
-
-	//Movimiento
-	if (xSpeed != 0)
-	{
-		if (xSpeed > 0)
-		{
-			move_contact_solid(0, xSpeed)
+		if(!ground and dj){
+			dj=0
+			part_particles_create(global.part_back,x+hspeed,y-20,global.p_dj,18);
+			part_particles_create(global.part_back,x+hspeed,y-20,global.p_dj2,6);
+			y_speed = -jump_power+2;
 		}
 		else
 		{
-			move_contact_solid(180, abs(xSpeed))
-		}
-	}
-
-	if (ySpeed != 0)
-	{
-		if (ySpeed > 0)
-		{
-			if (collision_rectangle(x - 12, y -10, x + 12, y, o_terrain, 0, 1))
+			ground = 0;
+			coyote_c = 0;
+		
+			if(crouch)
 			{
-				move_contact_solid(270, ySpeed)
+				if(place_free(x,y+1))
+				{
+					y += 1;
+				}
+				else
+				{
+					y_speed = -jump_power;
+				}
 			}
 			else
 			{
-				ySpeed_temp = round(ySpeed)
-				while (collision_rectangle(x - 12, y, x + 12, y + ySpeed_temp, o_terrain, 0, 1) != noone and ySpeed_temp != 0)
-				{
-					ySpeed_temp -= 1
-				}
-				y += ySpeed_temp
+				y_speed = -jump_power;
 			}
 		}
-		else
-		{
-			move_contact_solid(90, abs(ySpeed))
-		}
 	}
+}
 
-	//Checks
-	if (collision_rectangle(x - 12, y, x + 12, y + 1, o_terrain, 0, 1) and collision_rectangle(x - 12, y -10, x + 12, y, o_terrain, 0, 1) == noone) 
+if(keyboard_check_released(vk_alt))
+{
+	if(y_speed < 0) y_speed = 0;
+}
+
+// MOVIMEINTO ----------------------------------------------
+
+if(x_speed != 0)
+{
+	if(x_speed > 0)
 	{
-	    ground = 1
-	    ySpeed = 0
-
-	    // reset de doble salto al tocar suelo
-	    jump_count = 0
-	    djump_available = global.has_djump
+		move_contact_solid(0,x_speed);
 	}
 	else
 	{
-	    ground = 0
-	    crouch = 0
-	    ySpeed += grav
-	    if (ySpeed > fallMax) ySpeed = fallMax
-
-	    if (!place_free(x, y - 1)) 
-	    {
-	        if (ySpeed < 0) ySpeed = 0
-	    }
+		move_contact_solid(180,abs(x_speed));	
 	}
+}
 
-	
-	if (hp <= 0)
+if(y_speed != 0)
+{
+	if(y_speed > 0)
 	{
-		death = 1
-		invi = 1
-		alarm[1] = -1
+		if(collision_rectangle(x-12,y-10,x+12,y,o_terrain,0,1))
+		{
+			move_contact_solid(270,y_speed);
+		}
+		else
+		{
+			y_speed_temp = round(y_speed);
+			while(collision_rectangle(x-12,y,x+12,y+y_speed_temp,o_terrain,0,1) != noone and y_speed_temp != 0)
+			{
+				y_speed_temp -= 1;
+			}
+			y += y_speed_temp;
+		}
 	}
+	else
+	{
+		move_contact_solid(90,abs(y_speed));	
+	}
+}
 
-	//Weapon
-	if (keyboard_check(vk_control) and canShoot)
+// CHECKS -------------------------------------------------
+
+if(hp <= 0)
+{
+	dead = 1;
+	invi = 1;
+	alarm[1] = -1;
+}
+
+if(y_speed >= 0 and  collision_rectangle(x-12,y,x+12,y+1,o_terrain,0,1) and collision_rectangle(x-12,y-10,x+12,y,o_terrain,0,1)==noone )
+{
+	ground = 1;
+	y_speed = 0;
+	coyote_c = 1;
+	if(pick_dj)dj = 1;
+}
+else
+{
+	ground = 0;
+	y_speed += grav;
+	if(coyote_c and alarm[11] == -1) alarm[11] = coyote_t;
+	
+	if(y_speed > fall_max) y_speed = fall_max;
+	
+	if( !place_free(x,y-1) )
+	{
+		if(y_speed < 0) y_speed = 0;
+	}
+}
+
+// Weapons ------------------------------------------------
+
+if(keyboard_check(vk_control))
+{
+	if(can_shoot)
 	{
 		switch(weapon)
 		{
-		
 			case "pistol":
-				scr_pistol()
+				scr_pistol();
 			break;
 			
-			case "machine":
-				scr_machine_gun()
+			case "heavy":
+				scr_heavy();
+			break;
+			
+			case "laser":
+				scr_laser();
 			break;
 		}
 	}
 }
-else //Player is death
+
+}
+else
 {
-	image_alpha -= 0.005
-	if (image_alpha <= 0)
+	image_alpha -= 0.005;
+	if(image_alpha <= 0)
 	{
-		//Respawn
-		global.player_respawn = 1
-		hp = hpMax
-		death = 0
-		invi = 0
-		xSpeed = 0
-		ySpeed = 0
-		room_goto(global.checkpoint)
-	}	
+		// RESPAWN -------------------
+		global.player_respawn = 1;
+		hp = hpMax;
+		dead = 0;
+		invi = 0;
+		room_goto(global.checkpoint);
+	}
 }
