@@ -9,12 +9,18 @@ gpu_set_blendmode(bm_subtract)
  
 with(obj_player)
 draw_sprite_ext(s_light,0,x,y,3,3,0,c_white,1)
+
+with(o_att)
+draw_sprite_ext(s_light,0,x,y,2,2,0,c_white,1)
  
 with(o_enemy_body)
 draw_sprite_ext(s_light,0,x,y,3,3,0,c_white,1)
- 
-with(o_att)
+
+with(o_enemy_att)
 draw_sprite_ext(s_light,0,x,y,2,2,0,c_white,1)
+ 
+with(o_light)
+draw_sprite_ext(s_light,0,x,y,1.5,1.5,0,c_white,1)
  
 gpu_set_blendmode(bm_normal)
  
