@@ -12,7 +12,7 @@ pick_dj = 0
 
 
 x_speed = 0;
-x_speed_max = 3;
+x_speed_max = 3.5;
 x_accel = 0.5;
 
 ground = 0;
@@ -35,6 +35,9 @@ ammo_heavy = 0;
 
 pick_laser = 0;
 ammo_laser = 0;
+
+pick_machine = 0
+ammo_machine = 0
 
 weapon_modx = 15;
 weapon_mody = -25;

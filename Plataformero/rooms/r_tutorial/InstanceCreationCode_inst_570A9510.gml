@@ -1,0 +1,1 @@
+text = "Salta con presionando \nAlt"

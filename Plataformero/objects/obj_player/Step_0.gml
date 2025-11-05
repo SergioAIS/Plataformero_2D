@@ -7,8 +7,10 @@ if(!dead)
 //Weapon Change ----------------------
 
 if(keyboard_check_pressed(ord("1"))) weapon = "pistol";
-if(keyboard_check_pressed(ord("2")) and pick_heavy) weapon = "heavy";
-if(keyboard_check_pressed(ord("3")) and pick_laser) weapon = "laser";
+if(keyboard_check_pressed(ord("2")) and pick_machine) weapon = "machine";
+if(keyboard_check_pressed(ord("3")) and pick_heavy) weapon = "heavy";
+if(keyboard_check_pressed(ord("4")) and pick_laser) weapon = "laser";
+
 
 //Movement LEFT RIGHT ----------------
 
@@ -173,6 +175,10 @@ if(keyboard_check(vk_control))
 			
 			case "laser":
 				scr_laser();
+			break;
+			
+			case "machine":
+				scr_machine_gun()
 			break;
 		}
 	}

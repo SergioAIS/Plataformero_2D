@@ -13,12 +13,17 @@ draw_sprite(s_HUD,0,camera_x,camera_y);
 
 
 draw_set_color(c_white);
-//draw_set_font(font_hud);
+//draw_set_font(f_hud);
 
 switch(obj_player.weapon)
 {
 	case "pistol":
 		draw_text(camera_x+58,camera_y+70,"000");	
+	break;
+	
+	case "machine":
+		draw_sprite(s_pow_machine,0,camera_x+20,camera_y+60)
+		draw_text(camera_x+58,camera_y+70,obj_player.ammo_machine);	
 	break;
 	
 	case "heavy":

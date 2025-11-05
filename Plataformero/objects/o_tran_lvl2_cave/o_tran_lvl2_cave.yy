@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_pow_machine",
+  "name": "o_tran_lvl2_cave",
   "spriteId": {
-    "name": "s_pow_machine",
-    "path": "sprites/s_pow_machine/s_pow_machine.yy",
+    "name": "s_tran_r",
+    "path": "sprites/s_tran_r/s_tran_r.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_tran",
+    "path": "objects/o_tran/o_tran.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,12 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "pows",
-    "path": "folders/Objects/player/pows.yy",
+    "name": "lvl2",
+    "path": "folders/Objects/levels/trans/lvl2.yy",
   },
 }

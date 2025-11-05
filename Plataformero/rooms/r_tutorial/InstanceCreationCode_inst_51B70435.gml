@@ -1,0 +1,1 @@
+text = "Agachate y salta para \natravesar algunas plataformas"

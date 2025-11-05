@@ -1,0 +1,1 @@
+text = "Prueba distintas armas apretando \n 1 2 o 3 en tu teclado"

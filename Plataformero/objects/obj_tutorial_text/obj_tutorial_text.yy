@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_pow_machine",
-  "spriteId": {
-    "name": "s_pow_machine",
-    "path": "sprites/s_pow_machine/s_pow_machine.yy",
-  },
+  "name": "obj_tutorial_text",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,12 +22,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "pows",
-    "path": "folders/Objects/player/pows.yy",
+    "name": "control",
+    "path": "folders/Objects/control.yy",
   },
 }
