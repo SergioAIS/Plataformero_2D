@@ -48,3 +48,7 @@ dead = 0;
 invi = 0;
 right = 1;
 
+
+
+
+

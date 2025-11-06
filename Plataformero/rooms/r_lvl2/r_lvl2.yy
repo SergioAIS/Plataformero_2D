@@ -28,6 +28,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_297CB1FF","properties":[],"isDnd":false,"objectId":{"name":"o_pow_laser","path":"objects/o_pow_laser/o_pow_laser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_135432C2","properties":[],"isDnd":false,"objectId":{"name":"o_pow_machine","path":"objects/o_pow_machine/o_pow_machine.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5674639E","properties":[],"isDnd":false,"objectId":{"name":"o_pow_double_jump","path":"objects/o_pow_double_jump/o_pow_double_jump.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BE70D25","properties":[],"isDnd":false,"objectId":{"name":"o_pow_heal","path":"objects/o_pow_heal/o_pow_heal.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":416.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"terrain","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5972E470","properties":[],"isDnd":false,"objectId":{"name":"o_tran_l","path":"objects/o_tran_l/o_tran_l.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":448.0,},
@@ -226,6 +227,7 @@
     {"name":"inst_1476684D","path":"rooms/r_lvl2/r_lvl2.yy",},
     {"name":"inst_33F9B7A0","path":"rooms/r_lvl2/r_lvl2.yy",},
     {"name":"inst_5F1AD89","path":"rooms/r_lvl2/r_lvl2.yy",},
+    {"name":"inst_1BE70D25","path":"rooms/r_lvl2/r_lvl2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
