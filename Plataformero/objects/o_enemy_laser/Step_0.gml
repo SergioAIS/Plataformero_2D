@@ -12,6 +12,7 @@ if(can_shoot)
 		can_shoot = 0;
 		alarm[0] = shoot_delay;
 		tracer = instance_create_layer(x,y-32,"att",o_tracer);
+		audio_play_sound(snd_laser, 1, 0)
 	}
 }
 

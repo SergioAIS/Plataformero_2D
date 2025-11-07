@@ -1,0 +1,1 @@
+text = "Puedes disparar con \nCtrl

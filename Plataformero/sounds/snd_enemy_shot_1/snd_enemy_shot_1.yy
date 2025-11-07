@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "effects",
+    "path": "audiogroups/effects",
   },
   "soundFile": "snd_enemy_shot_1.wav",
   "duration": 0.313537,

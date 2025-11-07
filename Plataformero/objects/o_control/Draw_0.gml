@@ -13,7 +13,7 @@ draw_sprite(s_HUD,0,camera_x,camera_y);
 
 
 draw_set_color(c_white);
-//draw_set_font(f_hud);
+draw_set_font(f_hud);
 
 switch(obj_player.weapon)
 {

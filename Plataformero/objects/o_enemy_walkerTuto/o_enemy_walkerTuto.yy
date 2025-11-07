@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_enemy_walkerTuto",
   "spriteId": {
-    "name": "s_enemy_walker",
-    "path": "sprites/s_enemy_walker/s_enemy_walker.yy",
+    "name": "s_enemy_walkerTuto",
+    "path": "sprites/s_enemy_walkerTuto/s_enemy_walkerTuto.yy",
   },
   "solid": true,
   "visible": true,
