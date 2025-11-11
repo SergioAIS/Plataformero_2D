@@ -4,7 +4,7 @@ active = false;
 activation_distance = 400; // Distancia en pixels para activarse
 
 // Movimiento
-move_speed = 1;
+move_speed = 1.75;
 direction_facing = -1; // -1 = izquierda, 1 = derecha
 
 hp = 10

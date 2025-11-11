@@ -111,3 +111,21 @@ if (!place_meeting(x, y + y_speed, o_solid)) {
 }
 
 // ========== SISTEMA DE DISPARO ==========
+shoot_timer++;
+
+if (shoot_timer >= shoot_cooldown) {
+    // Crear disparo
+    var shot = instance_create_layer(x, y + shoot_offset_y, "Att", o_enemy_shot);
+    
+    // Configurar dirección del disparo hacia la izquierda
+    if (instance_exists(shot)) {
+        shot.direction = 180; // 180 grados = izquierda
+        shot.speed = 5; // Ajusta la velocidad del disparo
+    }
+    
+    // Opcional: reproducir sonido de disparo
+    // audio_play_sound(snd_enemy_shoot, 1, false);
+    
+    // Reiniciar timer
+    shoot_timer = 0;
+}
