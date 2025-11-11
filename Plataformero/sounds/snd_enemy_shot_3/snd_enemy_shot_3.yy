@@ -11,13 +11,13 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "effects",
-    "path": "audiogroups/effects",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_enemy_shot_3.wav",
   "duration": 1.718254,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SoundEffects",
+    "path": "folders/Sounds/SoundEffects.yy",
   },
 }

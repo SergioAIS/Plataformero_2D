@@ -11,13 +11,13 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "effects",
-    "path": "audiogroups/effects",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_shot_1.mp3",
   "duration": 1.38449,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SoundEffects",
+    "path": "folders/Sounds/SoundEffects.yy",
   },
 }

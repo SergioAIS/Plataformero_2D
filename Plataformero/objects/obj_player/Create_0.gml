@@ -47,8 +47,3 @@ weapon_mody = -25;
 dead = 0;
 invi = 0;
 right = 1;
-
-
-
-
-

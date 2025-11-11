@@ -4,54 +4,55 @@ if(!dead)
 
 //Sprite Checks ---------------------------------------------
 
-if(ground)
-{
-	if(x_speed == 0)
+	if(ground)
 	{
-		if(!crouch)
+		if(x_speed == 0)
 		{
-			sprite_index = s_stand;
+			if(!crouch)
+			{
+				sprite_index = s_stand;
+			}
+			else
+			{
+				sprite_index = s_crouch;
+			}
 		}
 		else
 		{
-			sprite_index = s_crouch;
+			sprite_index = s_walk;
 		}
 	}
 	else
 	{
-		sprite_index = s_walk;
+		if(y_speed >= 0)
+		{
+			sprite_index = s_fall;
+		}
+		else
+		{
+			sprite_index = s_jump;
+		}
 	}
-}else
-{
-	if(y_speed >= 0)
+
+	if(right)
 	{
-		sprite_index = s_fall;
+		image_xscale = 1;
 	}
 	else
 	{
-		sprite_index = s_jump;
+		image_xscale = -1;
 	}
-}
 
-if(right)
-{
-	image_xscale = 1;
-}
-else
-{
-	image_xscale = -1;
-}
+	if(invi)
+	{
+		image_alpha = 0.75;
+	}
+	else
+	{
+		image_alpha = 1;
+	}
 
-if(invi)
-{
-	image_alpha = 0.75;
-}
-else
-{
-	image_alpha = 1;
-}
-
-if(!crouch) mask_index = s_player_mask; else mask_index = s_player_mask_crouch;
+	if(!crouch) mask_index = s_player_mask; else mask_index = s_player_mask_crouch;
 
 }
 else

@@ -1,0 +1,1 @@
+text = "Este Power Up activa el \ndoble salto"

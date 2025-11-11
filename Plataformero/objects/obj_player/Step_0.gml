@@ -54,17 +54,19 @@ if(keyboard_check_pressed(vk_alt))
 {
 	if(ground or coyote_c or dj)
 	{
+		
 		if(!ground and dj){
 			dj=0
 			part_particles_create(global.part_back,x+hspeed,y-20,global.p_dj,18);
 			part_particles_create(global.part_back,x+hspeed,y-20,global.p_dj2,6);
+			audio_play_sound(snd_double_jump, 1, 0)
 			y_speed = -jump_power+2;
 		}
 		else
 		{
 			ground = 0;
 			coyote_c = 0;
-		
+			audio_play_sound(snd_jump, 1, 0)
 			if(crouch)
 			{
 				if(place_free(x,y+1))
@@ -195,6 +197,8 @@ else
 		hp = hpMax;
 		dead = 0;
 		invi = 0;
+		dj = 0
+		pick_dj = 0
 		room_goto(global.checkpoint);
 	}
 }

@@ -18,7 +18,7 @@ draw_set_font(f_hud);
 switch(obj_player.weapon)
 {
 	case "pistol":
-		draw_text(camera_x+58,camera_y+70,"000");	
+		draw_text(camera_x+58,camera_y+70,"∞");	
 	break;
 	
 	case "machine":

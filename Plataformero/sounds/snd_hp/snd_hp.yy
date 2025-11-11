@@ -11,13 +11,13 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "effects",
-    "path": "audiogroups/effects",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_hp.wav",
   "duration": 0.329093,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SoundEffects",
+    "path": "folders/Sounds/SoundEffects.yy",
   },
 }
