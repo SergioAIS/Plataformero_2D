@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_tutorial_text",
+  "name": "o_tutorial_text",
   "spriteId": null,
   "solid": false,
   "visible": true,

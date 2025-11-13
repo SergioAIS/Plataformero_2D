@@ -2,7 +2,7 @@
 camera_x = camera_get_view_x(view_camera[0]);
 camera_y = camera_get_view_y(view_camera[0]);
 
-//draw_text(camera_x+16,camera_y+16,o_player.hp);
+//draw_text(camera_x+16,camera_y+16,obj_player.hp);
 
 if(obj_player.hp > 0)
 {
@@ -14,26 +14,27 @@ draw_sprite(s_HUD,0,camera_x,camera_y);
 
 draw_set_color(c_white);
 draw_set_font(f_hud);
+draw_set_halign(fa_left)
 
 switch(obj_player.weapon)
 {
 	case "pistol":
-		draw_text(camera_x+58,camera_y+70,"∞");	
+		draw_text(camera_x+58,camera_y+68,"000");	
 	break;
 	
 	case "machine":
 		draw_sprite(s_pow_machine,0,camera_x+20,camera_y+60)
-		draw_text(camera_x+58,camera_y+70,obj_player.ammo_machine);	
+		draw_text(camera_x+62,camera_y+68,obj_player.ammo_machine);	
 	break;
 	
 	case "heavy":
 		draw_sprite(s_pow_magnum,0,camera_x+20,camera_y+60)
-		draw_text(camera_x+58,camera_y+70,obj_player.ammo_heavy);	
+		draw_text(camera_x+62,camera_y+68,obj_player.ammo_heavy);	
 	break;
 	
 	case "laser":
 		draw_sprite(s_pow_laser,0,camera_x+20,camera_y+60)
-		draw_text(camera_x+58,camera_y+70,obj_player.ammo_laser);	
+		draw_text(camera_x+62,camera_y+68,obj_player.ammo_laser);	
 	break;
 }
 

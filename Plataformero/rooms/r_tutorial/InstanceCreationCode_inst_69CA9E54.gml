@@ -1,1 +1,1 @@
-text = "Puedes disparar con \nCtrl
+text = "Puedes disparar \npresionando o manteniendo \nCtrl

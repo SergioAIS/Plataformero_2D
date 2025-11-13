@@ -1,1 +1,1 @@
-text = "Salta con presionando \nAlt"
+text = "Salta presionando \n'Alt'"
