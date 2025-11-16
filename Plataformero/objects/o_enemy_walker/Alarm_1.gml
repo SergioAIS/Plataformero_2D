@@ -1,2 +1,2 @@
 /// @description Reload
-canShoot = 1
+can_shoot = 1

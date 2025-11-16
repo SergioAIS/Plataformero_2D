@@ -5,8 +5,8 @@ audio_play_sound(snd_enemy_shot_1, 1, 0)
 
 if (image_xscale == -1) obj.hspeed *= -1
 
-alarm[1] = reloadSpeed
+alarm[1] = reload_speed
 
-hspeed = xSpeedTemp
+hspeed = x_speed_temp
 
 if (hspeed > 0) image_xscale = 1 else image_xscale = -1

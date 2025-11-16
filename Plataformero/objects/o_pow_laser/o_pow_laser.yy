@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_pow_master",
+    "path": "objects/o_pow_master/o_pow_master.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

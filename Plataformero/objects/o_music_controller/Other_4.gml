@@ -5,10 +5,19 @@ switch(room)
         audio_stop_all();
         audio_play_sound(snd_Title_Theme, 1, true);
     break;
+	
+	case r_transicion:
+        audio_stop_all();
+    break;
     
     case r_lvl1:
         audio_stop_all();
         audio_play_sound(snd_lvl_1, 1, true);
+    break;
+	
+	case r_lvl2:
+        audio_stop_all();
+        //audio_play_sound(snd_lvl_1, 1, true);
     break;
     
     //case r_boss:

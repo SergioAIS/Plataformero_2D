@@ -1,7 +1,7 @@
 
 //stats ------------------------------------
 
-hpMax = 60;
+hpMax = 600;
 hp = hpMax;
 invi_time = 45;
 
@@ -47,3 +47,10 @@ weapon_mody = -25;
 dead = 0;
 invi = 0;
 right = 1;
+
+// Sistema de melee
+melee_range = 60; // Distancia para detectar enemigos cercanos
+melee_cooldown = 0; // Timer para evitar spam
+melee_cooldown_max = 20; // Frames entre ataques melee (20 = ~0.33 seg)
+melee_damage = 25; // Daño del ataque melee
+melee_knockback = 8; // Fuerza del golpe

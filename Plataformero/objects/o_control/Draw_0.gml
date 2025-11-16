@@ -12,9 +12,13 @@ if(obj_player.hp > 0)
 draw_sprite(s_HUD,0,camera_x,camera_y);
 
 
+
 draw_set_color(c_white);
 draw_set_font(f_hud);
 draw_set_halign(fa_left)
+
+draw_text(camera_x + 300, camera_y + 20, "Score:")
+draw_text(camera_x + 360, camera_y + 20, score)
 
 switch(obj_player.weapon)
 {

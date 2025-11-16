@@ -93,6 +93,27 @@ if(keyboard_check_released(vk_alt))
 
 // MOVIMEINTO ----------------------------------------------
 
+// REEMPLAZAR la colisión con o_box por esto (antes del movimiento horizontal):
+
+// Colisión con interactables
+if (place_meeting(x + x_speed, y, o_interactable)) {
+    interactable = instance_place(x + x_speed, y, o_interactable);
+    if (interactable != noone) {
+        push_dir = sign(x_speed);
+        
+        // Empujar el objeto si tiene x_speed
+        if (variable_instance_exists(interactable, "x_speed")) {
+            interactable.x_speed = push_dir * abs(x_speed) * 0.8;
+        }
+        
+        // Detener al jugador si el objeto no puede moverse
+        if (place_meeting(interactable.x + push_dir, interactable.y, o_solid) ||
+            place_meeting(interactable.x + push_dir, interactable.y, o_terrain)) {
+            x_speed = 0;
+        }
+    }
+}
+
 if(x_speed != 0)
 {
 	if(x_speed > 0)
@@ -109,14 +130,23 @@ if(y_speed != 0)
 {
 	if(y_speed > 0)
 	{
-		if(collision_rectangle(x-12,y-10,x+12,y,o_terrain,0,1))
+		// Verificar colisión con terrain, solid o interactables
+		var collision_down = collision_rectangle(x-12, y-10, x+12, y, o_terrain, 0, 1) ||
+		                     collision_rectangle(x-12, y-10, x+12, y, o_solid, 0, 1) ||
+		                     collision_rectangle(x-12, y-10, x+12, y, o_interactable, 0, 1);
+		
+		if(collision_down)
 		{
-			move_contact_solid(270,y_speed);
+			move_contact_solid(270, y_speed);
 		}
 		else
 		{
 			y_speed_temp = round(y_speed);
-			while(collision_rectangle(x-12,y,x+12,y+y_speed_temp,o_terrain,0,1) != noone and y_speed_temp != 0)
+			
+			while((collision_rectangle(x-12, y, x+12, y+y_speed_temp, o_terrain, 0, 1) != noone ||
+			       collision_rectangle(x-12, y, x+12, y+y_speed_temp, o_solid, 0, 1) != noone ||
+			       collision_rectangle(x-12, y, x+12, y+y_speed_temp, o_interactable, 0, 1) != noone) 
+			      && y_speed_temp != 0)
 			{
 				y_speed_temp -= 1;
 			}
@@ -125,7 +155,7 @@ if(y_speed != 0)
 	}
 	else
 	{
-		move_contact_solid(90,abs(y_speed));	
+		move_contact_solid(90, abs(y_speed));	
 	}
 }
 
@@ -138,12 +168,21 @@ if(hp <= 0)
 	alarm[1] = -1;
 }
 
-if(y_speed >= 0 and  collision_rectangle(x-12,y,x+12,y+1,o_terrain,0,1) and collision_rectangle(x-12,y-10,x+12,y,o_terrain,0,1)==noone )
+// Detección de suelo mejorada (terrain, solid e interactables)
+ground_check = collision_rectangle(x-12, y, x+12, y+1, o_terrain, 0, 1) ||
+                   collision_rectangle(x-12, y, x+12, y+1, o_solid, 0, 1) ||
+                   collision_rectangle(x-12, y, x+12, y+1, o_interactable, 0, 1);
+                   
+ceiling_check = collision_rectangle(x-12, y-10, x+12, y, o_terrain, 0, 1) ||
+                    collision_rectangle(x-12, y-10, x+12, y, o_solid, 0, 1) ||
+                    collision_rectangle(x-12, y-10, x+12, y, o_interactable, 0, 1);
+
+if(y_speed >= 0 && ground_check && !ceiling_check)
 {
 	ground = 1;
 	y_speed = 0;
 	coyote_c = 1;
-	if(pick_dj)dj = 1;
+	if(pick_dj) dj = 1;
 }
 else
 {
@@ -153,38 +192,65 @@ else
 	
 	if(y_speed > fall_max) y_speed = fall_max;
 	
-	if( !place_free(x,y-1) )
+	if(!place_free(x, y-1))
 	{
 		if(y_speed < 0) y_speed = 0;
 	}
 }
 
 // Weapons ------------------------------------------------
-
-if(keyboard_check(vk_control))
-{
-	if(can_shoot)
-	{
-		switch(weapon)
-		{
-			case "pistol":
-				scr_pistol();
-			break;
-			
-			case "heavy":
-				scr_heavy();
-			break;
-			
-			case "laser":
-				scr_laser();
-			break;
-			
-			case "machine":
-				scr_machine_gun()
-			break;
-		}
-	}
+// Actualizar cooldown de melee
+if (melee_cooldown > 0) {
+    melee_cooldown--;
+    melee_active = true; // Mantener modo melee durante el cooldown
+} else {
+    melee_active = false;
 }
+
+// Solo ejecutar si se presiona o mantiene la tecla
+if (keyboard_check(vk_control)) {
+    // Detectar si hay enemigos cercanos para melee
+    enemy_nearby = instance_nearest(x, y, o_enemy_body);
+    use_melee = false;
+    
+    if (instance_exists(enemy_nearby)) {
+        dist = point_distance(x, y, enemy_nearby.x, enemy_nearby.y);
+        if (dist <= melee_range) {
+            use_melee = true;
+        }
+    }
+    
+    // Si hay enemigo cerca O todavía está en cooldown de melee, NO disparar
+    if (use_melee or melee_active) {
+        if (keyboard_check_pressed(vk_control) and melee_cooldown <= 0) {
+            scr_melee_attack();
+        }
+        // NO hacer nada más, no disparar
+    }
+    // Si NO hay enemigo cerca Y no está en cooldown de melee, disparar normalmente
+    else {
+        if (can_shoot) {
+            switch(weapon) {
+                case "pistol":
+                    scr_pistol();
+                break;
+                
+                case "heavy":
+                    scr_heavy();
+                break;
+                
+                case "laser":
+                    scr_laser();
+                break;
+                
+                case "machine":
+                    scr_machine_gun();
+                break;
+            }
+        }
+    }
+}
+
 
 }
 else

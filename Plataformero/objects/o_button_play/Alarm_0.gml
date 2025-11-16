@@ -1,4 +1,4 @@
 /// @description Change Room
 event_inherited();
 
-room_goto(r_lvl1)
+room_goto(r_transicion)

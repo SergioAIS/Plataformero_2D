@@ -1,4 +1,4 @@
-text = "Usa A/D para moverte\nSalta con ESPACIO";
+text = "";
 
 // Desplazamiento de la sombra
 shadow_offset = 3;
