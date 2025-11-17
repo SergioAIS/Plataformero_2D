@@ -255,6 +255,8 @@ if (keyboard_check(vk_control)) {
 }
 else
 {
+	audio_stop_all()
+	//audio_play_sound()
 	image_alpha -= 0.005;
 	if(image_alpha <= 0)
 	{
