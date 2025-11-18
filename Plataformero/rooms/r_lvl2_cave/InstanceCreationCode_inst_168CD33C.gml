@@ -1,1 +1,1 @@
-target_room = r_lvl1
+target_room = r_lvl2_cave2
