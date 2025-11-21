@@ -25,6 +25,7 @@
     {"id":{"name":"s_checkpoint","path":"sprites/s_checkpoint/s_checkpoint.yy",},"order":7,},
     {"id":{"name":"o_laser_player","path":"objects/o_laser_player/o_laser_player.yy",},"order":6,},
     {"id":{"name":"s_stand","path":"sprites/s_stand/s_stand.yy",},"order":1,},
+    {"id":{"name":"o_tran_lvl2cave5_lvl2cave4","path":"objects/o_tran_lvl2cave5_lvl2cave4/o_tran_lvl2cave5_lvl2cave4.yy",},"order":4,},
     {"id":{"name":"r_lvl5","path":"rooms/r_lvl5/r_lvl5.yy",},"order":10,},
     {"id":{"name":"o_button_parent","path":"objects/o_button_parent/o_button_parent.yy",},"order":0,},
     {"id":{"name":"s_crouch","path":"sprites/s_crouch/s_crouch.yy",},"order":6,},
