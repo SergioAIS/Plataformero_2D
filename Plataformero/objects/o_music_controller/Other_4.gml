@@ -17,7 +17,12 @@ switch(room)
 	
 	case r_lvl2:
         audio_stop_all();
-        //audio_play_sound(snd_lvl_1, 1, true);
+        audio_play_sound(snd_lvl2_1, 1, true);
+    break;
+	
+	case r_lvl2_cave:
+        audio_stop_all();
+        audio_play_sound(snd_lvl2_2, 1, true);
     break;
     
     //case r_boss:

@@ -24,6 +24,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"att","instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"obj","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_125DB8E1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_282D9409","properties":[],"isDnd":false,"objectId":{"name":"o_inter_mask","path":"objects/o_inter_mask/o_inter_mask.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":224.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"terrain","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39C5CDED","properties":[],"isDnd":false,"objectId":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":448.0,},
@@ -698,6 +699,7 @@
     {"name":"inst_494901CC","path":"rooms/r_tutorial/r_tutorial.yy",},
     {"name":"inst_258E9AF6","path":"rooms/r_tutorial/r_tutorial.yy",},
     {"name":"inst_49C33802","path":"rooms/r_tutorial/r_tutorial.yy",},
+    {"name":"inst_282D9409","path":"rooms/r_tutorial/r_tutorial.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

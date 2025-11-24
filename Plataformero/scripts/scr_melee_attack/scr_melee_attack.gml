@@ -47,4 +47,5 @@ function scr_melee_attack(){
 	}
 	
 	ds_list_destroy(targets);
+	audio_play_sound(snd_melee_atack, 1, 0)
 }

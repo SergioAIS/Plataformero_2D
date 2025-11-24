@@ -166,6 +166,8 @@ if(hp <= 0)
 	dead = 1;
 	invi = 1;
 	alarm[1] = -1;
+	audio_stop_all()
+	audio_play_sound(snd_death, 1, 0)
 }
 
 // Detección de suelo mejorada (terrain, solid e interactables)
@@ -255,11 +257,13 @@ if (keyboard_check(vk_control)) {
 }
 else
 {
-	audio_stop_all()
-	image_alpha -= 0.005;
+	
+	image_alpha -= 0.004;
+
 	if(image_alpha <= 0)
 	{
-		audio_play_sound(snd_death, 1, 0)
+		
+
 		// RESPAWN -------------------
 		global.player_respawn = 1;
 		hp = hpMax;

@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_death.mp3",
-  "duration": 5.736,
+  "soundFile": "snd_death.wav",
+  "duration": 2.689812,
   "parent": {
     "name": "SoundEffects",
     "path": "folders/Sounds/SoundEffects.yy",
