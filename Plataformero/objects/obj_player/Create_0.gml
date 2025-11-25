@@ -1,7 +1,7 @@
 
 //stats ------------------------------------
 
-hpMax = 60;
+hpMax = 600;
 hp = hpMax;
 invi_time = 45;
 

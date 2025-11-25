@@ -4,6 +4,7 @@
 global.previous_room = 0;
 global.checkpoint = 0;
 global.player_respawn = 0;
+global.inter = 0
 
 // Particulas --------------------------------------
 
@@ -32,6 +33,12 @@ part_type_scale(global.p_boom_large,1.75,1.75);
 part_type_life(global.p_boom_large,24,24);
 part_type_blend(global.p_boom_large,1);
 
+global.p_boom_largeB = part_type_create();
+
+part_type_sprite(global.p_boom_largeB,s_boom,1,1,0);
+part_type_scale(global.p_boom_largeB,5,5);
+part_type_life(global.p_boom_largeB,24,24);
+part_type_blend(global.p_boom_largeB,1);
 
 global.p_dj = part_type_create();
 
@@ -80,6 +87,17 @@ part_type_direction(global.p_spark,45,135,0,0);
 part_type_gravity(global.p_spark,0.20,270);
 part_type_blend(global.p_spark,1);
 part_type_life(global.p_spark,45,45);
+
+global.p_sparkB = part_type_create();
+
+part_type_shape(global.p_sparkB,pt_shape_disk);
+part_type_size(global.p_sparkB,0.5,0.8,-0.007,0);
+part_type_color3(global.p_sparkB,65535,33023,255);
+part_type_speed(global.p_sparkB,2,3.2,0,0);
+part_type_direction(global.p_sparkB,45,135,0,0);
+part_type_gravity(global.p_sparkB,0.20,270);
+part_type_blend(global.p_sparkB,1);
+part_type_life(global.p_sparkB,45,45);
 
 global.p_spark_laser = part_type_create();
 
