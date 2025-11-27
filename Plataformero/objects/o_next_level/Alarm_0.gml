@@ -7,7 +7,7 @@ if (global.previous_room == r_start)
 	{
 		room_goto(r_lvl2)
 	} 
-		else if (global.previous_room == r_lvl2)
+		else if (global.previous_room == r_lvl2_finish)
 		{
 			room_goto(r_lvl3)
 		}

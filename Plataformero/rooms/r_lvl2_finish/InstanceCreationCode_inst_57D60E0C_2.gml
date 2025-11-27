@@ -1,1 +1,1 @@
-target_room = r_lvl2_cave
+target_room = r_transicion
