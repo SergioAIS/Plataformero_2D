@@ -1,17 +1,23 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_stalactic",
+  "name": "o_enemy_bat",
   "spriteId": {
-    "name": "s_stalactic",
-    "path": "sprites/s_stalactic/s_stalactic.yy",
+    "name": "s_enemy_bat",
+    "path": "sprites/s_enemy_bat/s_enemy_bat.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_enemy_bat_mask",
+    "path": "sprites/s_enemy_bat_mask/s_enemy_bat_mask.yy",
+  },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_enemy_body",
+    "path": "objects/o_enemy_body/o_enemy_body.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,13 +33,12 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_att","path":"objects/o_att/o_att.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "levels",
-    "path": "folders/Objects/levels.yy",
+    "name": "enemies",
+    "path": "folders/Objects/enemies.yy",
   },
 }

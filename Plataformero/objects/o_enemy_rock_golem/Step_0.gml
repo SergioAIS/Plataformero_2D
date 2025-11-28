@@ -1,3 +1,5 @@
+event_inherited();
+
 // Aplicar gravedad
 y_speed += grav;
 if (y_speed > 10) y_speed = 10;
@@ -42,5 +44,4 @@ if (!hardened and ground) {
 // Voltear sprite
 image_xscale = facing;
 
-event_inherited();
 

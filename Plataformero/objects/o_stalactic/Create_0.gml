@@ -3,11 +3,11 @@ state = "waiting";
 
 // Detección
 detect_range = 30; // Rango horizontal para detectar jugador
-detect_below_distance = 200; // Distancia vertical máxima
+detect_below_distance = 400; // Distancia vertical máxima
 
 // Temblor
 shake_time = 20; // Frames que tiembla antes de caer
-shake_intensity = 2;
+shake_intensity = 3;
 shake_timer = 0;
 
 // Caída
