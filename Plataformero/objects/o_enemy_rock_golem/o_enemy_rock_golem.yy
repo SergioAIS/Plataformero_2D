@@ -37,7 +37,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "Level 2",
+    "path": "folders/Objects/enemies/Level 2.yy",
   },
 }

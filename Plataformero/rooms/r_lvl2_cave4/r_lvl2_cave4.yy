@@ -33,6 +33,9 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"obj","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48C7E1B0","properties":[],"isDnd":false,"objectId":{"name":"o_door","path":"objects/o_door/o_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2559.0,"y":600.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64132BB0","properties":[],"isDnd":false,"objectId":{"name":"o_checkpoint","path":"objects/o_checkpoint/o_checkpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2400.0,"y":608.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25A2A5EF","properties":[],"isDnd":false,"objectId":{"name":"o_enemy_rock_golem","path":"objects/o_enemy_rock_golem/o_enemy_rock_golem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":576.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3BA7C4EA","properties":[],"isDnd":false,"objectId":{"name":"o_enemy_rock_golem","path":"objects/o_enemy_rock_golem/o_enemy_rock_golem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1054.0,"y":370.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FC7F56D","properties":[],"isDnd":false,"objectId":{"name":"o_enemy_rock_golem","path":"objects/o_enemy_rock_golem/o_enemy_rock_golem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2048.0,"y":608.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"terrain","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79B0EF91_3","properties":[],"isDnd":false,"objectId":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-5.0,"y":333.0,},
@@ -361,6 +364,9 @@
     {"name":"inst_48C7E1B0","path":"rooms/r_lvl2_cave4/r_lvl2_cave4.yy",},
     {"name":"inst_114161","path":"rooms/r_lvl2_cave4/r_lvl2_cave4.yy",},
     {"name":"inst_64132BB0","path":"rooms/r_lvl2_cave4/r_lvl2_cave4.yy",},
+    {"name":"inst_25A2A5EF","path":"rooms/r_lvl2_cave4/r_lvl2_cave4.yy",},
+    {"name":"inst_3BA7C4EA","path":"rooms/r_lvl2_cave4/r_lvl2_cave4.yy",},
+    {"name":"inst_6FC7F56D","path":"rooms/r_lvl2_cave4/r_lvl2_cave4.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
