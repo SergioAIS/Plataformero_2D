@@ -9,7 +9,8 @@ if(obj_player.hp > 0)
 	draw_sprite_ext(s_life_bar,0,camera_x+54,camera_y+27,obj_player.hp*100/obj_player.hpMax,1,0,c_white,1);
 }
 
-draw_sprite(s_HUD,0,camera_x,camera_y);
+
+	draw_sprite(s_HUD,0,camera_x,camera_y);
 
 
 

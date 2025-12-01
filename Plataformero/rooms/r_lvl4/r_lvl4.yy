@@ -314,6 +314,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70C77632","properties":[],"isDnd":false,"objectId":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":778.0,"y":736.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B3812CE","properties":[],"isDnd":false,"objectId":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":698.0,"y":704.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D536CE6","properties":[],"isDnd":false,"objectId":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":698.0,"y":736.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58BD0BD4","properties":[],"isDnd":false,"objectId":{"name":"o_tran_r","path":"objects/o_tran_r/o_tran_r.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":6272.0,"y":448.0,},
       ],"visible":false,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Solids","tilesetId":{"name":"TileSet11","path":"tilesets/TileSet11/TileSet11.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":295,"SerialiseHeight":22,"TileCompressedData":[
 -971,-2147483648,1,12,-6,13,1,14,-287,-2147483648,1,23,-6,46,1,48,-286,-2147483648,2,33,34,-6,46,1,48,-285,-2147483648,2,0,44,-7,46,2,25,0,-284,-2147483648,2,0,44,-7,46,5,36,37,-2147483648,-2147483648,79,-3,102,2,81,103,-238,-2147483648,1,101,-7,80,2,81,82,-29,-2147483648,3,55,68,56,-6,46,11,48,-2147483648,-2147483648,90,92,113,113,92,114,0,0,-236,-2147483648,3,112,91,92,-5,91,2,92,93,-29,-2147483648,-2,0,1,67,-6,68,10,59,0,-2147483648,-2147483648,19,-2147483648,-2147483648,19,-2147483648,0,-233,-2147483648,1,18,-5,-2147483648,1,19,-5,-2147483648,1,19,-9,-2147483648,3,50,51,52,-10,-2147483648,1,18,-8,-2147483648,-7,0,-2,-2147483648,14,0,-2147483648,-2147483648,19,-2147483648,-2147483648,19,-2147483648,-2147483648,18,-2147483648,50,51,52,-20,-2147483648,1,19,-7,-2147483648,1,18,-157,-2147483648,-22,2,3,3,-2147483648,1,-16,2,2,28,29,-5,31,1,30,-5,31,1,30,-7,31,10,6,60,61,62,63,64,4,31,31,5,-4,31,4,5,29,5,31,-3,5,-8,31,1,5,-6,31,12,30,31,31,30,31,31,29,60,61,62,63,64,-19,31,1,30,-7,31,1,29,-3,31,4,27,2,2,28,-9,31,1,27,-10,2,1,3,-129,-2147483648,-22,13,3,14,0,12,-16,13,1,39,-8,41,1,42,-6,41,1,42,-4,40,8,17,71,72,73,74,75,15,16,-3,40,7,42,40,42,40,40,42,40,-8,41,7,42,41,41,
@@ -625,6 +626,7 @@
     {"name":"inst_70C77632","path":"rooms/r_lvl4/r_lvl4.yy",},
     {"name":"inst_1B3812CE","path":"rooms/r_lvl4/r_lvl4.yy",},
     {"name":"inst_3D536CE6","path":"rooms/r_lvl4/r_lvl4.yy",},
+    {"name":"inst_58BD0BD4","path":"rooms/r_lvl4/r_lvl4.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -648,7 +650,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Level 4",
+    "path": "folders/Rooms/Level 4.yy",
   },
 }

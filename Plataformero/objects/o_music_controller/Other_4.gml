@@ -24,6 +24,11 @@ switch(room)
         audio_stop_all();
         audio_play_sound(snd_lvl2_2, 1, true);
     break;
+	
+	case r_lvl4:
+        audio_stop_all();
+        //audio_play_sound(snd_lvl2_2, 1, true);
+    break;
     
     //case r_boss:
     //    audio_stop_all();
