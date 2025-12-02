@@ -1,0 +1,1 @@
+target_room = r_lvl4_castle2
