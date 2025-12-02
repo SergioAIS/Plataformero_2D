@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_switch",
   "spriteId": {
-    "name": "s_switch",
-    "path": "sprites/s_switch/s_switch.yy",
+    "name": "lever_floor",
+    "path": "sprites/lever_floor/lever_floor.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
