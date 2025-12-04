@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet15",
+  "name": "t_casttle",
   "spriteId": {
     "name": "tileset_castle",
     "path": "sprites/tileset_castle/tileset_castle.yy",

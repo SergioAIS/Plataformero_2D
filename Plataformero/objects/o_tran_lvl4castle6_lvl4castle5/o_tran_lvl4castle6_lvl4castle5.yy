@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_door",
+  "name": "o_tran_lvl4castle6_lvl4castle5",
   "spriteId": {
-    "name": "door",
-    "path": "sprites/door/door.yy",
+    "name": "s_tran_l",
+    "path": "sprites/s_tran_l/s_tran_l.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_interactive",
-    "path": "objects/o_interactive/o_interactive.yy",
+    "name": "o_tran",
+    "path": "objects/o_tran/o_tran.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,13 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "levels",
-    "path": "folders/Objects/levels.yy",
+    "name": "trans",
+    "path": "folders/Objects/levels/trans.yy",
   },
 }

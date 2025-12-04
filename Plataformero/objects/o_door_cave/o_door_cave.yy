@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_door",
+  "name": "o_door_cave",
   "spriteId": {
-    "name": "door",
-    "path": "sprites/door/door.yy",
+    "name": "s_door",
+    "path": "sprites/s_door/s_door.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,12 +29,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "levels",
-    "path": "folders/Objects/levels.yy",
+    "name": "control",
+    "path": "folders/Objects/control.yy",
   },
 }
