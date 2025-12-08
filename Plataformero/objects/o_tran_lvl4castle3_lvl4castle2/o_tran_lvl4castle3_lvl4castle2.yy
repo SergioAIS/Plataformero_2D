@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_door_cave",
-  "spriteId": null,
+  "name": "o_tran_lvl4castle3_lvl4castle2",
+  "spriteId": {
+    "name": "s_tran_l",
+    "path": "sprites/s_tran_l/s_tran_l.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_interactive",
-    "path": "objects/o_interactive/o_interactive.yy",
+    "name": "o_tran",
+    "path": "objects/o_tran/o_tran.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,12 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "control",
-    "path": "folders/Objects/control.yy",
+    "name": "lvl4",
+    "path": "folders/Objects/levels/trans/lvl4.yy",
   },
 }
